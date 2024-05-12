@@ -54,7 +54,7 @@ namespace HypotrochoidToy
                 KeyLatch[KeyIndex] = false;
             }
 
-            SetPreset(Randomizer.Next(7));
+            SetPreset(Randomizer.Next(8));
         }
 
         public void ApplyWindowMode()
@@ -122,6 +122,11 @@ namespace HypotrochoidToy
                     Speed1 = 2.77697587f;
                     Speed2 = 9.247984f;
                     Ratio = 0.402030617f;
+                    break;
+                case 7:
+                    Speed1 = 0.9222812f;
+                    Speed2 = 2.01263618f;
+                    Ratio = 0.3272117f;
                     break;
                 default:
                     Randomize();
@@ -253,7 +258,7 @@ namespace HypotrochoidToy
                 Speed2 = Math.Max(1.0f / ((1.0f / Speed2) + 0.0002f), 0.1f);
             }
 
-            for (int Preset = 0; Preset < 7; ++Preset)
+            for (int Preset = 0; Preset < 8; ++Preset)
             {
                 Keys Number = (Keys)((int)Keys.D1 + Preset);
                 if (OnKeyDown(Number))
