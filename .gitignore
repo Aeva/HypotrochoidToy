@@ -109,3 +109,6 @@ UpgradeLog*.XML
 .vs/
 .user
 .vscode/
+
+# Nix stuff that doesn't work
+shell.nix

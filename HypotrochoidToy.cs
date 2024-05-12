@@ -39,7 +39,7 @@ namespace HypotrochoidToy
         public HypotrochoidToy()
         {
             _graphics = new GraphicsDeviceManager(this);
-            _graphics.PreferMultiSampling = true;
+            //_graphics.PreferMultiSampling = true;
             _graphics.HardwareModeSwitch = false;
             _graphics.GraphicsProfile = GraphicsProfile.HiDef;
             ApplyWindowMode();
